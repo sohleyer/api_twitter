@@ -1,11 +1,42 @@
 my_id = '786160679967338496'
 
 do_not_touch_usr =['AdriendeVlt', 'CathVince', 'benjdesgachons',
-                   'pplassart', 'Lea_Lejeune', 'manonrescan']
+                   'pplassart', 'Lea_Lejeune', 'manonrescan',
+                   'alainjuppe', 'Paris', 'ericmandonnet',
+                   'mdiplo', 'MinistereCC', 'leJDD',
+                   'EducationFrance', 'CGPMEnationale', 'ChTaubira',
+                   'j_jaures', 'medef', 'PhilippeCorbe',
+                   'LaFrenchTech', 'Elysee', 'dilmabr',
+                   'NicolasSarkozy', 'narendramodi', 'CasaRosada',
+                   'laurentbazin', 'CFECGC', 'AlainMarschall',
+                   'leLab_E1', 'LEXPRESS', '_Terra_Nova',
+                   'MinSocialSante', 'MLP_Officiel', 'CNIL',
+                   'jdlevy', 'fhollande', 'gouvernementFR',
+                   'frenchweb', 'apollineWakeUp', 'lofejoma',
+                   'publicsenat', 'JLMelenchon', 'francediplo',
+                   'fleurpellerin', 'jattali', 'CroissancePlus',
+                   'JunckerEU', 'fabricearfi', 'lauhaim',
+                   'Minist_Travail', 'matteorenzi','edwyplenel',
+                   'UN', 'B_Roger_Petit', 'Pontifex_fr',
+                   'vnataf', 'EmmanuelMacron', 'lesinrocks',
+                   'bayrou', 'CFDT', 'MartinSchulz',
+                   'franceinfoplus', 'cedricfaiche','Place_Beauvau',
+                   'SyndicatCFTC', 'askolovitchC', 'prefpolice',
+                   'StateDept', 'LEPolitique', 'LCP',
+                   'LePoint', 'C_Barbier', 'jbcadier',
+                   'LesEchos', 'JohnKerry', 'CarlMeeus',
+                   'Marion_M_Le_Pen', 'nk_m', 'leParisien_pol',
+                   'DebatF24', '19HRuthElkrief', 'Bordeaux',
+                   'iledefrance', 'Min_Agriculture', 'ArLeparmentier',
+                   'BFMPolitique', 'Senat_Info', 'FCulture_Pol',
+                   'GuillaumeDaret', 'Le_Scan', 'CamilleLanglade',
+                   'lemonde_pol', 'fgerschel', 'arretsurimages',
+                   'ecologiEnergie', 'CPolF5', 'ThomasWieder',
+                   'sup_recherche', 'jwaintraub', 'justice_gouv',
+                   '_Bercy_', 'PauSR', 'Valeurs',
+                   'thomassoulie', '20HPolitique', 'CChaffanjon',
+                   'VilledeNice', 'GTabard', 'metropolerennes',
+                   'MathildeCarton', 'SophiFay', 'all0nsenfants']
 
-do_not_touch_id =['1236626948', '539933087', '87219352',
-                   '303791295', '86325278', '138761261']
 
-my_do_not_touch_id = ['ThierryArnaud']
-
-my_do_not_touch_usr = ['48511621']
+my_do_not_touch_usr = ['ThierryArnaud', 'MediathequeSC']

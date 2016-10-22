@@ -1,5 +1,6 @@
 from add_followers import *
 from clean_friends import *
+from utilitary import *
 
 
 
@@ -27,4 +28,4 @@ def follow_my_followers_main():
 
 
 if __name__ == '__main__':
-    clean_main()
+    print(len(import_data('datas/do_not_touch_id.csv')))

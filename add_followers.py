@@ -1,18 +1,7 @@
-from auth.auth_ruche import consumer_key,consumer_secret, access_token, access_token_secret
 from constants import my_id
-import tweepy
 import csv
 import time
 
-
-# ___get_API________________________________________________________
-
-
-def get_API():
-    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_token, access_token_secret)
-
-    return tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify = True)
 
 
 # ____save_followers_____________________________________________________
@@ -27,17 +16,6 @@ def save_followers(api, usr_str, filename):
         for follower_id in followers_list:
             writer.writerow({'id': follower_id})
     print("data imported, csv writed")
-
-
-#  ___import_datas____________________________________________________
-
-def import_data(infile_name):
-    followers_list = []
-    with open(infile_name, 'r') as csvfile:
-        reader = csv.DictReader(csvfile, delimiter=";")
-        for row in reader:
-            followers_list.append(row['id'])
-    return followers_list
 
 
 #  ___follow____________________________________________________
