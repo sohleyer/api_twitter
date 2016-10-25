@@ -36,7 +36,10 @@ do_not_touch_usr =['AdriendeVlt', 'CathVince', 'benjdesgachons',
                    '_Bercy_', 'PauSR', 'Valeurs',
                    'thomassoulie', '20HPolitique', 'CChaffanjon',
                    'VilledeNice', 'GTabard', 'metropolerennes',
-                   'MathildeCarton', 'SophiFay', 'all0nsenfants']
+                   'MathildeCarton', 'SophiFay', 'all0nsenfants',
+                   'lamaisoncitoyen', 'AlexandreJardin','dgabriel92',
+                   'JCPIERSON92']
 
 
-my_do_not_touch_usr = ['ThierryArnaud', 'MediathequeSC']
+my_do_not_touch_usr = ['ThierryArnaud', 'MediathequeSC', 'laurelucchesi',
+                       'opendemnow', 'ValentinChaput']

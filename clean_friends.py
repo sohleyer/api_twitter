@@ -1,7 +1,6 @@
-import csv
 import copy
 import time
-from add_followers import import_data
+from utilitary import *
 from constants import do_not_touch_usr, my_do_not_touch_usr
 
 

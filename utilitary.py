@@ -16,18 +16,19 @@ def get_API():
 
 #  ___import_datas____________________________________________________
 
-def import_data(infile_name):
+def import_data(infile_name, fieldname):
     followers_list = []
     with open(infile_name, 'r') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=";")
         for row in reader:
-            followers_list.append(row['id'])
+            followers_list.append(row[fieldname])
     return followers_list
 
 
 #  ___usr_name_to_id____________________________________________________
 
-def usr_name_to_id(api, usr_name_list, outfile_name):
+def usr_name_to_id(api, outfile_name):
+    usr_name_list = import_data('datas/do_not_touch_usr_name.csv', 'usr_name')
     with open(''.join(['datas/', outfile_name]), 'w', encoding='utf-8', errors='ignore') as csvfile:
         fieldnames = ['id']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=";")
@@ -40,7 +41,18 @@ def usr_name_to_id(api, usr_name_list, outfile_name):
     print('usr_name to id OK, file in the data folder')
 
 
+#  ___list_to_csv____________________________________________________
+
+def list_to_csv(list, fieldname, outfile_name):
+    with open(''.join(['datas/', outfile_name]), 'w', encoding='utf-8', errors='ignore') as csvfile:
+        fieldnames = [fieldname]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=";")
+        writer.writeheader()
+        for elmt in list:
+            writer.writerow({fieldname: elmt})
+    print('file in the data folder')
+
 
 if __name__ == '__main__':
     api = get_API()
-    #usr_name_id(api, do_not_touch_usr+my_do_not_touch_usr, 'do_not_touch_id.csv')
+    usr_name_to_id(api, 'do_not_touch_id.csv')

@@ -3,7 +3,6 @@ import csv
 import time
 
 
-
 # ____save_followers_____________________________________________________
 
 def save_followers(api, usr_str, filename):
@@ -30,7 +29,7 @@ def follow(api, followers_id_list, outfile_name):
         for follower_id in followers_id_list:
             api.create_friendship(follower_id)
             time.sleep(2)
-            print('friendship_created !')
+            print('friendship_created ! with', follower_id)
             writer.writerow({'id': follower_id})
 
 
