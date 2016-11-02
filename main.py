@@ -6,25 +6,28 @@ from utilitary import *
 def add_followers_main():
     api = get_API()
 
-    save_followers(api, 'all0nsenfants', 'followers_id_AE.csv')
-    followers_list = import_data('datas/followers_id_AE.csv')
-    follow(api, followers_list[200:300], 'friends_cache.csv')
+    save_followers(api, 'VilleSaintCloud', 'followers_id_VilleSaintCloud.csv')
+    followers_list = import_data('datas/followers_id_VilleSaintCloud.csv','id')
+    follow(api, followers_list[500:600], 'friends_cache.csv')
 
 
 def clean_main():
     api = get_API()
+
     save_followers(api, 'Ruche_io', 'my_followers.csv')
     save_friends(api, 'Ruche_io', 'my_friends.csv')
-    friends_list = import_data('datas/my_friends.csv')
-    clean(api, 'my_followers.csv', friends_list[400:500])
+    friends_list = import_data('datas/my_friends.csv','id')
+    #usr_name_to_id(api, 'do_not_touch_id.csv')
+    clean(api, 'my_followers.csv', friends_list, 2)
 
 
 def follow_my_followers_main():
     api = get_API()
+
     save_followers(api, 'Ruche_io', 'my_followers.csv')
-    my_followers_list = import_data('datas/my_followers.csv')
+    my_followers_list = import_data('datas/my_followers.csv','id')
     follow(api, my_followers_list, 'friends_cache.csv')
 
 
 if __name__ == '__main__':
-    follow_my_followers_main()
+    clean_main()

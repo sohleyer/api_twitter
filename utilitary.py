@@ -1,7 +1,6 @@
 import csv
 import tweepy
 from auth.auth_ruche import consumer_key,consumer_secret, access_token, access_token_secret
-from constants import do_not_touch_usr, my_do_not_touch_usr
 
 
 # ___get_API________________________________________________________
@@ -54,5 +53,5 @@ def list_to_csv(list, fieldname, outfile_name):
 
 
 if __name__ == '__main__':
-    api = get_API()
-    usr_name_to_id(api, 'do_not_touch_id.csv')
+    test = [1,2,3,4,13,23,34,9]
+    print (test[-4:])
