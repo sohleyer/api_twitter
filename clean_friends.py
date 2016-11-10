@@ -1,6 +1,7 @@
 import copy
 import time
 from utilitary import *
+import random
 
 
 # ____save_followers (persons I follow)_____________________________________________________
@@ -36,6 +37,6 @@ def clean(api, followers_file, friends_list, n_last_to_delete):
 
     for friend_to_delete_id in friends_to_delete[-n_last_to_delete:]:
         api.destroy_friendship(friend_to_delete_id)
-        time.sleep(2)
+        time.sleep(random.uniform(3,6))
         print('friendship deleted !')
     print('friends are clean !')

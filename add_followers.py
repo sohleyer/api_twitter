@@ -1,6 +1,7 @@
 from constants import my_id
 import csv
 import time
+import random
 
 
 # ____save_followers_____________________________________________________
@@ -28,7 +29,7 @@ def follow(api, followers_id_list, outfile_name):
         writer.writeheader()
         for follower_id in followers_id_list:
             api.create_friendship(follower_id)
-            time.sleep(2)
+            time.sleep(random.uniform(3,6))
             print('friendship_created ! with', follower_id)
             writer.writerow({'id': follower_id})
 
