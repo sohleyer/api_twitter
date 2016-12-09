@@ -1,15 +1,14 @@
 from add_followers import *
 from clean_friends import *
 from utilitary import *
-import random
 
 
 def add_followers_main():
     api = get_API()
 
-    save_followers(api, 'EnsembleStCloud', 'followers_id_EnsembleStCloud.csv')
-    followers_list = import_data('datas/followers_id_EnsembleStCloud.csv','id')
-    follow(api, followers_list[65:], 'friends_cache.csv')
+    save_followers(api, 'MediacitesLille', 'followers_id_MediacitesLille.csv')
+    followers_list = import_data('datas/followers_id_MediacitesLille.csv','id')
+    follow(api, followers_list[215:], 'friends_cache.csv')
 
 
 def clean_main():
@@ -31,4 +30,4 @@ def follow_my_followers_main():
 
 
 if __name__ == '__main__':
-    add_followers_main()
+    clean_main()
