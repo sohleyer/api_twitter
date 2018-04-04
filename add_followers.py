@@ -29,7 +29,7 @@ def follow(api, followers_id_list, outfile_name):
         writer.writeheader()
         for follower_id in followers_id_list:
             api.create_friendship(follower_id)
-            time.sleep(random.uniform(3,6))
+            time.sleep(random.uniform(10,20))
             print('friendship_created ! with', follower_id)
             writer.writerow({'id': follower_id})
 

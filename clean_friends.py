@@ -37,6 +37,6 @@ def clean(api, followers_file, friends_list, n_last_to_delete):
 
     for friend_to_delete_id in friends_to_delete[-n_last_to_delete:]:
         api.destroy_friendship(friend_to_delete_id)
-        time.sleep(random.uniform(3,6))
+        time.sleep(random.uniform(10,20))
         print('friendship deleted !')
     print('friends are clean !')

@@ -43,4 +43,4 @@ if __name__ == '__main__':
 
     #OK POUR LANCER
     first_time = False
-    save_followers_with_location(api_audience, 'lillefrance', 'Lille', number_of_page=10, first_time=first_time, cursor=1549278150658371214)
+    save_followers_with_location(api_audience, 'lillefrance', 'Lille', number_of_page=40, first_time=first_time, cursor=1535236984513649085)

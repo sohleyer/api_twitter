@@ -3,17 +3,18 @@ from clean_friends import *
 from utilitary import *
 
 
-def add_followers_main():
+def add_followers_main(usr_name):
     api = get_API()
 
-    save_followers(api, 'MediacitesLille', 'followers_id_MediacitesLille.csv')
-    followers_list = import_data('datas/followers_id_MediacitesLille.csv','id')
-    follow(api, followers_list[215:], 'friends_cache.csv')
+    save_followers(api, usr_name, ''.join(['followers_id_', usr_name, '.csv']))
+    followers_list = import_data(''.join(['datas/followers_id_', usr_name, '.csv']), 'id')
+    follow(api, followers_list[0:50], 'friends_cache.csv')
 
 def add_followers_with_location_main(filename):
     api = get_API()
+
     followers_list = import_data(''.join(['datas/followers_id_with_location/', filename]),'id')
-    follow(api, followers_list[26:], 'friends_cache.csv')
+    follow(api, followers_list[450:500], 'friends_cache.csv')
 
 def clean_main():
     api = get_API()
@@ -34,4 +35,6 @@ def follow_my_followers_main():
 
 
 if __name__ == '__main__':
-    add_followers_with_location_main(filename='followers_id_lillefrance_in_Lille1')
+    #clean_main()
+    #add_followers_with_location_main('followers_id_lillefrance_in_Lille.csv')
+    add_followers_main('all0nsenfants')
