@@ -3,8 +3,6 @@ import tweepy
 from auth.auth_audience import consumer_key_audience,consumer_secret_audience, access_token_audience, access_token_secret_audience
 
 
-# ____save_followers_____________________________________________________
-
 def save_followers_with_location(api, usr_str, location, number_of_page,
                                  filename=None, first_time=False, cursor=-1):
     if not filename:

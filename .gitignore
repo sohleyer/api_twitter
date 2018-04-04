@@ -6,3 +6,5 @@ auth/
 __pycache__/
 
 datas/
+
+constants.py
