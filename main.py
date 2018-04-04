@@ -61,6 +61,6 @@ def follow_my_followers(my_id_str='Ruche_io'):
 
 
 if __name__ == '__main__':
+    usr_str="" #to fill
     #clean()
-    #add_followers_with_location('followers_id_lillefrance_in_Lille.csv')
-    add_followers('all0nsenfants')
+    add_followers(usr_str)
